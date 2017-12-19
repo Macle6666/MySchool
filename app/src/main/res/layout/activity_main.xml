@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myschool.MainActivity"
+    >
+    <!--顶部-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/top"
+        android:background="@android:color/white"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/text_top"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我的校园"
+            android:textSize="18sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@android:color/black"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+
+    <!--底部-->
+    <RadioGroup
+        android:id="@+id/bottom_rg"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <RadioButton
+            style="@style/tab_menu_item"
+            android:id="@+id/rb_message"
+            android:drawableTop="@mipmap/rili"
+            android:text="新 闻"
+
+            />
+        <RadioButton
+            style="@style/tab_menu_item"
+            android:id="@+id/rb_wxb"
+            android:drawableTop="@mipmap/wxb"
+            android:text="日 期"
+            />
+        <RadioButton
+            style="@style/tab_menu_item"
+            android:id="@+id/rb_cart"
+            android:drawableTop="@mipmap/cart"
+            android:text="课 表"/>
+        <RadioButton
+            style="@style/tab_menu_item"
+            android:id="@+id/rb_mine"
+            android:drawableTop="@mipmap/mine"
+            android:text="我 的"/>
+
+
+    </RadioGroup>
+
+
+    <!--中部内容-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@android:color/white"
+        android:layout_above="@id/bottom_rg"/>
+
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_rg"
+        android:layout_below="@id/top">
+
+    </FrameLayout>
+</RelativeLayout>

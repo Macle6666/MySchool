@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+       <FrameLayout
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           >
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:src="@drawable/bg_mine"
+               android:id="@+id/mine_image"
+               android:scaleType="fitXY"/>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <!--设置信息按钮-->
+               <ImageButton
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@mipmap/setting"
+                   android:id="@+id/setting"
+                   android:layout_alignParentLeft="true"
+                   />
+               <!--头像-->
+               <ImageView
+                   android:layout_width="80dp"
+                   android:layout_height="80dp"
+                   android:src="@mipmap/mine"
+                   android:layout_centerInParent="true"
+                   android:id="@+id/touxiang"
+                   />
+               <!--ID-->
+               <TextView
+                   android:layout_width="200dp"
+                   android:layout_height="50dp"
+                   android:id="@+id/mine_name"
+                   android:text="爱学习，不挂科"
+                   android:layout_below="@id/touxiang"
+                   android:textColor="#D1EEEE"
+                   android:gravity="center"
+                   android:layout_centerHorizontal="true"
+                   />
+
+           </RelativeLayout>
+
+
+       </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:text="个性签名："/>
+                        <TextView
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:id="@+id/qianming"
+                            android:layout_height="match_parent"
+                            android:text="爱学习，不挂科"/>
+                </LinearLayout>
+
+                <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                          <TextView
+                              android:layout_weight="1"
+                              android:layout_width="0dp"
+                              android:gravity="center"
+                              android:layout_height="match_parent"
+                              android:text="教育信息："/>
+                         <TextView
+                             android:layout_weight="3"
+                             android:layout_width="0dp"
+                             android:gravity="center"
+                             android:id="@+id/jiaoyu"
+                             android:layout_height="match_parent"
+                             android:text="爱学习，不挂科"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:text="交友宣言："/>
+                        <TextView
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:id="@+id/jiaoyou"
+                            android:layout_height="match_parent"
+                            android:text="爱学习，不挂科"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:text="个人信息："/>
+                        <TextView
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:id="@+id/geren"
+                            android:layout_height="match_parent"
+                            android:text="爱学习，不挂科"/>
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>
